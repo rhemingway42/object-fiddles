@@ -4,32 +4,39 @@
 //Create an object called me. Give it a key of name with the value being your name, and another key of age with the value being your age. Then alert your name using dot notation.
 
   //Code here
+  var me = {
+    name: 'Ryan',
+    age: '36'
+  };
 
-
-
+  alert(me.name);
 
 //NEXT PROBLEM
-
-
-
 
 //Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday. Have the values to those keys be your favorite thing in that category.
 
   //Code here
+  var favoriteThings = {
+    band: 'GnR',
+    food: 'Pizza',
+    person: 'Ryan',
+    book: 'Alchemist',
+    movie: 'Too Many',
+    holiday: 'Halloween'
+  }
 
 
 //After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 
   //Code here
-
+favoriteThings.car = 'jetta';
+favoriteThings.brand = 'Coke';
 
 //Now change the food key in your favoriteThings object to be 'Lettuce' and change the book key in your favoriteThings object to be '50 Shades of Gray'.
 
   //Code here
-
-
-
-
+favoriteThings.food = 'Lettuce';
+favoriteThings.book = '50 shades of Gray';
 //NEXT PROBLEM
 
 
@@ -43,32 +50,46 @@ Using dot notation, add another key (or property) to your backPack object
 that is named color, with the value being the color of your backpack. */
 
   //Code here
+  var backPack = {  
+  }
+
+  var item = 'firstPocket';
+  backPack['firstPocket'] = 'chapstick';
+  backPack.color = 'blue';
+
+
 
 //After you do the above, alert your entire backPack object.
 
   //Code here
-
+alert(backPack)
+console.log(backPack);
 /*You probably noticed that it just alerted [object Object].
 Alerting to see the data in your Object doesn't work so well.
 Instead, console.log your whole backPack object and then check out the console. */
 
   //Code here
 
-
-
-
 //NEXT PROBLEM
-
-
-
 
 //Create another 'me' object with the following properties name, age, height, gender, married, eyeColor, hairColor. Fill those properties in with the appropriate values.
 
   //Code Here
+  var me = {
+    age: '36',
+    height: "6'0",
+    gender: "M",
+    married: "Yes",
+    eyeColor: "Brown",
+    hairColor: "Brown"
+  }
 
 //Now, loop through your object and alert every value. *Tyler --> 24 --> 6'0 --> Male, etc etc
 
   //Code Here
+  for (var key in me) {
+    alert(me[key]);
+  }
 
 
 
